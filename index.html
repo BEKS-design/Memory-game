@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Устанавливаем мета-данные страницы -->
+    <meta charset="UTF-8"> <!-- Устанавливаем кодировку страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Для корректного отображения на мобильных устройствах -->
+    <title>Memory Game</title> <!-- Заголовок страницы, который отображается в браузере -->
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение файла стилей для оформления страницы -->
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Game</h1> <!-- Заголовок игры -->
+
+        <div class="controls">
+            <!-- Кнопка для начала игры -->
+            <button id="startBtn">Start Game</button>
+            
+            <div id="difficulty">
+                <!-- Кнопки для выбора уровня сложности -->
+                <button id="easyBtn">Easy</button>
+                <button id="mediumBtn">Medium</button>
+                <button id="hardBtn">Hard</button>
+            </div>
+        </div>
+
+        <!-- Игровая доска, где будут отображаться карточки -->
+        <div id="gameBoard" class="game-board"></div>
+
+        <!-- Место для вывода сообщений (например, когда игра закончена) -->
+        <div id="message"></div>
+
+        <!-- Таймер, который отслеживает время игры -->
+        <div id="timer">Time: 0</div>
+    </div>
+
+    <!-- Подключаем файл с JavaScript кодом -->
+    <script src="script.js"></script>
+</body>
+</html>
